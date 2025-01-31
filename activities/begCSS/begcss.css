@@ -1,0 +1,28 @@
+
+body {
+    background-color: #f96060;
+}
+
+p{
+    font-family: "Gill Sans", sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: azure;
+    transition:all 2s;
+}
+h1:hover{
+    color: black;
+    font-size: xx-large;
+    transition:all 1s;
+
+}
+
+.question{
+    font-size:x-large;
+}
+
+footer{
+    margin-top: 200px;
+}
