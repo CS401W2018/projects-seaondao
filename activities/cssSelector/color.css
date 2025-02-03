@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(192, 209, 236);
+    text-align: center;
+}
+
+footer p{
+    color: rgb(124, 126, 128);
+}
+
+li{
+    font-size: x-large;
+}
+li p{
+    font-size: 18px;
+}
+
+h1{
+    font-family: Chalkduster, fantasy;
+    text-align: center;
+}
+
+
+
+.blue{
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
+.questions-div ol{
+  display: inline-block;  
+  text-align: left;
+}
+
+.question{
+    font-size: larger;
+    font-family: Impact, fantasy;
+}
