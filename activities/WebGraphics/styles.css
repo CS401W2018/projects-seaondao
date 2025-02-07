@@ -1,0 +1,12 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #E2E0C8;
+}
+
+.cowImg{
+    max-width: 600px;
+}
+
+.question{
+    font-weight: bolder;
+}
