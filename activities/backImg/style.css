@@ -1,0 +1,21 @@
+body{
+    /* background-image: url("bgimg.webp");
+    background-color: rgb(173, 239, 217); */
+
+    background: url(bgimg.webp) rgb(173 , 239, 217); /*Short cut way*/
+
+    background-size: cover;
+    font-size: x-large;
+    font-weight: bolder;
+}
+header{
+    /* background-image: url("fish.png");
+    background-repeat: no-repeat;
+    background-position: top right; */
+
+    background:url("fish.png") top right no-repeat ;
+}
+
+h3{
+    color: brown;
+}
