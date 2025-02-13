@@ -1,7 +1,7 @@
 
 body{
     background-color: rgb(107, 104, 104);
-    background-image: url("/imgs/bgimage.jpg");
+    background-image: url("imgs/bgimage.jpg");
     background-repeat: repeat;
     color: white;
 
@@ -29,7 +29,7 @@ Index.html
  */
 
 .home{
-    background-image: url(/imgs/japanFlag.jpg);
+    background-image: url("imgs/japanFlag.jpg");
     background-repeat: no-repeat;
     background-position: right;
 }
