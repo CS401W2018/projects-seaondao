@@ -1,0 +1,71 @@
+
+body{
+    background-color: rgb(107, 104, 104);
+    background-image: url("/imgs/bgimage.jpg");
+    background-repeat: repeat;
+    color: white;
+
+    font-family: Optima, sans-serif;
+}
+
+
+h1,h2{
+    text-align: center;
+    color: pink;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: aliceblue;
+    color: rgb(27, 27, 27);
+}
+
+p{
+    font-size: x-large;
+}
+
+/* 
+Index.html
+ */
+
+.home{
+    background-image: url(/imgs/japanFlag.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+ul{
+    list-style: none;
+}
+ul li p{
+    display: flex;
+    align-items: center;
+}
+
+
+
+ /*General*/
+
+.navbar_div{
+    text-align: center;
+    font-size: xx-large;
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+nav a:hover{
+    color: blue;
+}
+
+footer{
+    margin-top: 8rem;
+    display: flex;
+    align-items: ends;
+}
+
+.current{
+    color: aquamarine;
+}
