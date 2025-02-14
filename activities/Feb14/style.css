@@ -1,0 +1,33 @@
+body{
+    background-color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+header{
+    margin: 10px;
+    background-image: url("bgimage.jpg");
+    background-color: rgba(109, 211, 211, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 4px 8px;
+}
+
+header h1{
+    margin: 50px;
+    padding: 15px;
+    border: 5px dotted rgb(125, 62, 62);
+    text-shadow: 2px 2px pink;
+    
+}
+
+
+figure img{
+    border: 10px dotted rgb(130, 190, 255); 
+}
+
+figure img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
