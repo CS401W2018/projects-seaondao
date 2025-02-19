@@ -1,0 +1,53 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+span{
+    font-weight: bolder;
+}
+nav a{
+    background-color: aqua;
+    display: block;
+    padding: 10px 5px;
+    border-bottom: 2px dotted rgb(255, 255, 255);
+}
+
+
+.okinawa{
+    
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.floatImg{
+    float: right;    
+}
+
+.okinawa img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.okinawa img:hover{
+    opacity: 0.5;
+}
+
+.okinawa figcaption{
+    text-align: center;
+}
+
+.clear{
+    clear: both;
+}
+
+.okinawa_div{
+    border: 0.5px solid black;
+}
+
+.moveImg{
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    border: 2px dotted pink;
+
+}
