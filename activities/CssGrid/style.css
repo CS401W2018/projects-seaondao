@@ -1,0 +1,15 @@
+body{
+    background-color: aliceblue;
+}
+
+.parent{
+    padding: 10px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em;
+}
+.child{
+    background-color: aquamarine;
+    
+}
