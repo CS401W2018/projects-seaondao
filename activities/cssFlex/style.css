@@ -1,0 +1,35 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+}
+nav{
+    display: flex;
+    background-color: brown;
+    justify-content: space-evenly;
+}
+nav a{
+    display: block;
+    background-color: aquamarine;
+    color: black;
+    padding: 5px 10px;
+}
+.parent{
+    padding: 1em;
+    background-color: darkorange;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.child{
+    padding: 1em;
+    background-color: pink;
+    width: 100px;
+    height: 10px;
+}
+.question{
+    font-size: larger;
+    text-decoration: underline;
+}
