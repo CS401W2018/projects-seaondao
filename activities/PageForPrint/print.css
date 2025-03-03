@@ -1,0 +1,30 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+nav{
+    display: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.card_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    margin: 1em;
+    border: 1px dotted pink;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+.card figure{
+    margin: 0.5em;
+}
+.card img{
+    width: 100%;
+}

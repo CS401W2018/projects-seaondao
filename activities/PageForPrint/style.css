@@ -1,0 +1,38 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(230, 157, 62);
+}
+nav a{
+    display: block;
+    padding: 1px;
+    background-color: rgb(255, 163, 33);
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.card_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    margin: 1em;
+    border: 1px dotted pink;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+.card figure{
+    margin: 0.5em;
+}
+.card img{
+    width: 100%;
+}
