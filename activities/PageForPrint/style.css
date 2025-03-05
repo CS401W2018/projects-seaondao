@@ -36,3 +36,22 @@ nav a:hover{
 .card img{
     width: 100%;
 }
+
+@media only screen AND (max-width: 900px){
+    .card_div{
+        flex-direction:column;
+    }
+}
+
+@media only screen AND (max-width: 600px){
+    h1{
+        background-color: rgb(0, 129, 241);
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav a {
+        margin: 1px;
+        text-align: center;
+    }
+}
