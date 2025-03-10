@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <header>
+        <h1>Engagement - Tables</h1>
+    </header>
+    <main>
+
+        <div class="table_div">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Number</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS</td>
+                        <td rowspan="2">140</td>
+                        <td>11:00-11:50 AM</td>
+                        <td>P2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        
+                        <td>12:00-12:50 PM</td>
+                        <td>P2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>210</td>
+                        <td>2:00-2:50 PM</td>
+                        <td>P2</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="5">Spring 2025</th>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>320</td>
+                        <td>3:00-3:50 PM</td>
+                        <td>P2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody> 
+                <tfoot>
+                <tr>
+                    <th id="total-credits" colspan="4">Total Credits</th>
+                    <td headers="total-credits">15</td>
+                </tr>
+                </tfoot>               
+            </table>
+        </div>
+
+        <ol>
+            <li>
+                <p>When do you use a table?</p>
+                <p>When you have a data to be organized.for example, Player name, Position,etc..</p>
+            </li>
+            <li>
+                <p>When do you not use a table?</p>
+                <p>To layout(position) element on your page.(lik making side bars)</p>
+            </li>
+            <li>
+                <p>When do you need to do extra work for table accessibility?</p>
+                <p>Giving headers=ID to tell which one is the header so that people who can't see can also get the information from screen reader.</p>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        &copy;2025 Shion Tetuanui
+    </footer>
+</body>
+</html>
