@@ -1,0 +1,40 @@
+body{
+    background-color: bisque;
+}
+.schedule{
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 30px;
+    caption-side: bottom;
+    border-spacing: 0;
+    /* border-collapse: collapse; */
+
+}
+
+.schedule th,.schedule td{
+    border: thin solid black; 
+    /* background-color: rgb(245, 207, 157); */
+    border-radius: 5px;
+    padding: 20px;
+}
+/* .schedule td{
+    border: 3px solid black; 
+} */
+ .schedule tfoot{
+    background-color: black;
+    color: white;
+ }
+
+
+.schedule .cs140{
+    width: 300px;
+    font-weight: bolder;
+}
+
+.schedule tbody tr:nth-child(even){
+    background-color: rgb(209, 115, 0);    
+}
+
+main p::first-letter{
+    font-size: larger;
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Tables</title>
 </head>
 <body>
@@ -12,9 +13,11 @@
     <main>
 
         <div class="table_div">
-            <table border="1">
+            <table class="schedule">
+
                 <thead>
-                    <tr>
+                    <caption>class schedule</caption>
+                    <tr class="odd">
                         <th>Department</th>
                         <th>Number</th>
                         <th>Time</th>
@@ -22,15 +25,16 @@
                         <th>Credits</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr>
                         <td>CS</td>
-                        <td rowspan="2">140</td>
+                        <td class="cs140" rowspan="2">140</td>
                         <td>11:00-11:50 AM</td>
                         <td>P2</td>
                         <td>3</td>
                     </tr>
-                    <tr>
+                    <tr class="odd">
                         <td>CS</td>
                         
                         <td>12:00-12:50 PM</td>
@@ -39,7 +43,7 @@
                     </tr>
                     <tr>
                         <td>CS</td>
-                        <td>210</td>
+                        <td class="cs210">210</td>
                         <td>2:00-2:50 PM</td>
                         <td>P2</td>
                         <td>3</td>
@@ -50,12 +54,13 @@
                     </tr>
                     <tr>
                         <td>CS</td>
-                        <td>320</td>
+                        <td class="cs320">320</td>
                         <td>3:00-3:50 PM</td>
                         <td>P2</td>
                         <td>3</td>
                     </tr>
-                </tbody> 
+                </tbody>
+
                 <tfoot>
                 <tr>
                     <th id="total-credits" colspan="4">Total Credits</th>
@@ -67,16 +72,12 @@
 
         <ol>
             <li>
-                <p>When do you use a table?</p>
-                <p>When you have a data to be organized.for example, Player name, Position,etc..</p>
+                <p>Why don't we use the border attribute?</p>
+                <p>it will give the validation error.</p>
             </li>
             <li>
-                <p>When do you not use a table?</p>
-                <p>To layout(position) element on your page.(lik making side bars)</p>
-            </li>
-            <li>
-                <p>When do you need to do extra work for table accessibility?</p>
-                <p>Giving headers=ID to tell which one is the header so that people who can't see can also get the information from screen reader.</p>
+                <p>What is the easiest way to color every other row a different color?</p>
+                <p>use sudo class like this .schedule tbody tr:nth-child(even)</p>
             </li>
         </ol>
     </main>
