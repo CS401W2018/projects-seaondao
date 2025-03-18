@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Engagement Form</h1>
+    </header>
+    <main>
+        <div class="form_div">
+            <form action="processing.html" method="get">
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fullname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State :</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="Califonia">Califonia</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Hawaii" selected>Hawaii</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div>Year in School</div>
+                    <label ><input type="radio" name="year" value="Freshman"> Freshman</label>
+                    <label><input type="radio" name="year" value="Sophmore"> Sophmore</label>
+                </div>
+                <div class="form-row">
+                    <input type="submit">    
+                </div>
+            </form>
+        </div>
+        <div class="question_div">
+            <ol>
+                <li>
+                    <p>The form tag has an "action" attribute. What does it do?</p>
+                    <p>It is just like going to a new page.(Destination) </p>
+                </li>
+                <li>
+                    <p>The form tag has a "method" attribute. What does it do?</p>
+                    <p>get or post</p>
+                </li>
+                <li>
+                    <p>What is the difference between a "POST" and a "GET"?</p>
+                    <p>GET - By submitting the form this will not change the data. *like google serch.</p>
+                    <p>POST - By submitting the form this will change the data. *like making a post on instagram, log in.(you shouldn't see it on URL)</p>
+                </li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        &copy;2025 Shion Tetuanui
+    </footer>
+</body>
+</html>
