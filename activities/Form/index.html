@@ -4,66 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Form</title>
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Engagement Form</h1>
+        <h1 id="title">How was the class?</h1>
     </header>
+    <nav>
+
+    </nav>
     <main>
-        <div class="form_div">
-            <form action="processing.html" method="get">
+        <form id="myForm" action="processing.html">
+            <fieldset>
+                <legend>Rate this CS 444 class</legend>
                 <div class="form-row">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" name="fullname" placeholder="Full Name" id="fullname">
+                    <label class="short" for="email">Email adress: </label><input class="short-box" type="email" id="email" name="email">
                 </div>
                 <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
+                    <label class="short" for="password">Password: </label> <input class="short-box" type="password" id="password" name="password">
                 </div>
-                <div class="form-row">
-                    <label for="pass">Password:</label>
-                    <input type="password" name="password" id="pass">
+                <div class="form-row radio">
+                    <p>How old are you?</p>
                 </div>
+                <div class="form-row radio">
+                    <label class="shorter" for="underTeen">under 14</label>
+                    <input type="radio" name="age" id="underTeen">
+                    
+                </div>
+                <div class="form-row radio">
+                    <label class="shorter" for="teen">15 - 19</label>
+                    <input type="radio" name="age" id="teen">
+                    
+                </div>         
+                <div class="form-row radio">
+                    <label class="shorter" for="over20">over 20</label>
+                    <input type="radio" name="age" id="over20"> 
+                </div> 
                 <div class="form-row">
-                    <label for="state">State :</label>
-                    <select name="state" id="state">
-                        <option value="blank"></option>
-                        <option value="Califonia">Califonia</option>
-                        <option value="Utah">Utah</option>
-                        <option value="Hawaii" selected>Hawaii</option>
+                    <label for="rate">Rate how was the cource 1-5</label>
+                    <select name="rate" id="rate">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
                     </select>
+                    
                 </div>
                 <div class="form-row">
-                    <div>Year in School</div>
-                    <label ><input type="radio" name="year" value="Freshman"> Freshman</label>
-                    <label><input type="radio" name="year" value="Sophmore"> Sophmore</label>
+                    <textarea id="review" name="review" rows="4" cols="50" placeholder="Tell us how was your experienece ..."></textarea>
                 </div>
                 <div class="form-row">
-                    <input type="submit">    
+                    <label class="radio" for="agree">Agree the term and condition ?</label>
+                    <input type="checkbox" id="agree" name="agree">
                 </div>
-            </form>
-        </div>
-        <div class="question_div">
+                <div class="form-row submit-div">
+                    <input class="submit"  type="submit">
+                </div>  
+            </fieldset>
+        </form>
+        <div>
             <ol>
                 <li>
-                    <p>The form tag has an "action" attribute. What does it do?</p>
-                    <p>It is just like going to a new page.(Destination) </p>
+                    <p class="question">What is JavaScript? How did it get its name?</p>
+                    <p class="answer">
+                        js is programming language
+                        They named after JAVA but its diffrent because js is for web.
+                    </p>
                 </li>
                 <li>
-                    <p>The form tag has a "method" attribute. What does it do?</p>
-                    <p>get or post</p>
+                    <p class="question">What are the two ways you can run JavaScript?</p>
+                    <p class="answer">1.running DOM aka running in browser</p>
+                    <p class="answer">2.on Node JS</p>
                 </li>
                 <li>
-                    <p>What is the difference between a "POST" and a "GET"?</p>
-                    <p>GET - By submitting the form this will not change the data. *like google serch.</p>
-                    <p>POST - By submitting the form this will change the data. *like making a post on instagram, log in.(you shouldn't see it on URL)</p>
+                    <p class="question">What was the most popular front-end js library?</p>
+                    <p class="answer">JQuery</p>
+                </li>
+                <li>
+                    <p class="question">What is the most popular front-end js library today?</p>
+                    <p class="answer">React Js</p>
                 </li>
             </ol>
+
         </div>
     </main>
     <footer>
         &copy;2025 Shion Tetuanui
     </footer>
+
+    <script>
+        const myForm = document.getElementById("myForm");
+        const title = document.getElementById("title");
+        const email = document.getElementById("email");
+        // const formBox = document.querySelector("form fieldset")
+
+        //for engagement
+        myForm.addEventListener('submit',function(){
+            event.preventDefault();//this will prevent from redirecting you to (submitted web)
+            alert("Thank you submitting");
+
+            console.log(email.value);
+        })
+
+
+        //for fun
+        title.addEventListener('click',function(){
+            console.log("Clicked");
+            title.classList.toggle("clicked")
+        })
+        
+        
+    </script>
 </body>
 </html>

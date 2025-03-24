@@ -1,3 +1,84 @@
 body{
     background-color: aquamarine;
 }
+
+html .bodyColorOne{
+    background-color: rgb(128, 252, 128);
+}
+
+
+header h1{
+ text-align: center;  
+}
+
+header .clicked{
+    color: blueviolet;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main .form-row{
+    display: flex;
+    margin: 5px 0;
+}
+
+main form .short{
+    display: inline-block;
+    width: 120px;
+}
+main form .short-box , #review{
+    background-color: rgb(184, 255, 249);
+}
+
+main form #review{
+    border-radius: 10px;
+}
+
+main form .short-box:focus{
+    background-color: black;
+    color: white;
+}
+
+main form .shorter{
+    display: inline-block;
+    width: 60px;
+}
+main form .radio{
+    display: flex;
+    align-items: center;
+}
+
+main form .submit-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+main form .form-row .submit{
+    width: 100px;
+}
+main form .form-row .submit:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 200px;
+}
+
+@media screen AND (max-width: 600px){
+    body{
+        background-color: bisque;
+    }
+    main{
+        width: fit-content;  
+    }
+    main .form-row{
+        flex-direction: column;
+        
+    }
+
+}
