@@ -66,24 +66,13 @@
         <div>
             <ol>
                 <li>
-                    <p class="question">What is JavaScript? How did it get its name?</p>
-                    <p class="answer">
-                        js is programming language
-                        They named after JAVA but its diffrent because js is for web.
-                    </p>
+                    <p class="question">What is AJAX?</p>
+                    <p class="answer">when you are typing on google, JS updating the web without loading again.</p>
                 </li>
                 <li>
-                    <p class="question">What are the two ways you can run JavaScript?</p>
-                    <p class="answer">1.running DOM aka running in browser</p>
-                    <p class="answer">2.on Node JS</p>
-                </li>
-                <li>
-                    <p class="question">What was the most popular front-end js library?</p>
-                    <p class="answer">JQuery</p>
-                </li>
-                <li>
-                    <p class="question">What is the most popular front-end js library today?</p>
-                    <p class="answer">React Js</p>
+                    <p class="question">Why do you put your JS Code in a separate file?</p>
+                    <p class="answer"></p>
+                    <p class="answer"></p>
                 </li>
             </ol>
 
@@ -99,22 +88,46 @@
         const email = document.getElementById("email");
         // const formBox = document.querySelector("form fieldset")
 
+        //for fun
+        title.addEventListener('click',function(){
+            console.log("Clicked");
+            title.classList.toggle("clicked");
+        })
+
+
+
+
         //for engagement
         myForm.addEventListener('submit',function(){
             event.preventDefault();//this will prevent from redirecting you to (submitted web)
             alert("Thank you submitting");
-
+            
+            const formData = { //DO i need to put in here ... ? 
+                email:email,
+            }
+            
             console.log(email.value);
+
+        //form with AJAX
+
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET","submit.json",true);
+            xhr.setRequestHeader("Content-Type","application/json");
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4 && xhr.status === 200){
+                    alert('Form submitted successfully');
+                }else if (xhr.readyState === 4){
+                    alert("Error Submitted form")
+                }
+            };
+
+            xhr.send(JSON.stringify(formData));
+            alert(`Success: ${email.value}`);
         })
 
 
-        //for fun
-        title.addEventListener('click',function(){
-            console.log("Clicked");
-            title.classList.toggle("clicked")
-        })
-        
-        
+  
     </script>
 </body>
 </html>
