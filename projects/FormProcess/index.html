@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Processing</title>
+</head>
+<body>
+    <header>
+        <h1>How was the class?</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <div id="message"></div>
+        <form id="form" action="processing.html">
+            <fieldset>
+                <legend>Rate this CS 444 class</legend>
+                <div class="form-row">
+                    <label class="short" for="email">Email adress: </label><input required class="short-box" type="email" id="email" name="email">
+                </div>
+                <div class="form-row">
+                    <label class="short" for="password">Password: </label> <input required class="short-box" type="password" id="password" name="password">
+                </div>
+                <div class="form-row">
+                    <label class="short" for="num">Number 1-10: </label> <input required class="short-box" type="number" id="num" name="num">
+                </div>
+                <div class="form-row radio">
+                    <p>How old are you?</p>
+                </div>
+                <div class="form-row radio">
+                    <label class="shorter" for="underTeen">under 14</label>
+                    <input type="radio" name="age" id="underTeen" value="underTeen">    
+                </div>
+                <div class="form-row radio">
+                    <label class="shorter" for="teen">15 - 19</label>
+                    <input type="radio" name="age" id="teen" value="teen">
+                    
+                </div>         
+                <div class="form-row radio">
+                    <label class="shorter" for="over20">over 20</label>
+                    <input type="radio" name="age" id="over20" value="over20"> 
+                </div> 
+                <div class="form-row">
+                    <textarea id="review" name="review" rows="4" cols="50" placeholder="Tell us how was your experienece ..."></textarea>
+                </div>
+                <div class="form-row">
+                    <label  class="radio" for="agree">Agree the term and condition ?</label>
+                    <input required type="checkbox" id="agree" name="agree">
+                </div>
+                <div class="form-row submit-div">
+                    <input  class="submit"  type="submit">
+                </div>  
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy;2025 Shion Tetuanui
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
