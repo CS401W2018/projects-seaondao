@@ -1,0 +1,19 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(179, 225, 210);
+}
+header h1{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    color: blue;
+}
+
+footer{
+    margin-top: 50vh;
+}
