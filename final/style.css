@@ -138,3 +138,42 @@ ul li a{
 footer{
     margin-top: 10vh;
 }
+
+
+
+@media only screen AND (max-width: 850px){
+    .card img{
+        height: 200px;
+    }
+}
+@media only screen AND (max-width: 600px){
+    main{
+        padding: 0.5em;
+    }
+    header{
+        position: unset;
+    }
+    nav{
+        position: unset;
+        display: block;
+        background-color: unset;
+    }
+    nav a{
+        
+        margin: 1rem auto;
+        text-align: center;
+        display: block;
+    }
+    .cards-div{
+        display:block;
+    }
+    .card,.mini-card{
+        background-color: rgba(36, 113, 163, 1);
+        width: 80%;
+        margin: 1em 1rem;
+    }
+    .card img{
+        height: unset;
+    }
+    
+}
