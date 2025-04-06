@@ -1,19 +1,140 @@
+
+
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(images/bg-sea.jpg);
+    background-size: cover;
     background-color: rgb(179, 225, 210);
+    font-family: Georgia, serif;
+}
+
+header,nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+header{
+    position: sticky;
+    top: 0;
+}
+nav{
+    position: sticky;
+    top: 35px;
 }
 header h1{
+    margin: 0;
+
+    width: 100%;
     text-align: center;
+    font-family: 'Courier New', monospace;
+    font-weight: 900;
+    transform: rotate(1deg);
+    text-shadow: pink 4px 2px 2px;
+    transition: all 3s;
 }
+
 nav{
     display: flex;
     justify-content: space-evenly;
 }
+nav .focused{
+    color: rgba(255, 255, 255,0.6);
+    text-decoration: underline;
+}
 nav a{
+    border: 0.1px solid black;
+    padding: 1px;
+    border-radius: 5px;
     text-decoration: none;
     color: blue;
+    font-family: cursive;
+    font-size: large;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: rgba(0, 0, 0, 1);
 }
 
+/* For indexhtml UL */
+ul li a{
+    display: block;
+}
+/**/
+
+.cards-div{
+    display: flex;
+    justify-content: space-around;
+}
+.cards{
+    display: flex;
+}
+.card{
+    background-color: rgba(36, 113, 163, 0.5);
+    width: 40%;
+    border: 1px solid black;
+    margin: 1em 2em;
+    padding: 0.3em;
+    box-shadow: 7px 5px 5px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.card:hover{
+    transition: all 1s;
+    opacity: 1;
+    cursor: pointer;
+    
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+}
+.mini-card a{
+    text-decoration: none;
+    color: black;
+}
+.mini-card{
+    background-color: rgba(36, 113, 163, 0.8);
+    width: 20%;
+    border: 1px solid black;
+    margin: 1em 2em;
+    padding: 0.3em;
+    box-shadow: 7px 5px 5px;
+    border-radius: 5px;
+}
+.mini-card:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.mini-card img{
+    width: 100%;
+}
+.mini-card h4{
+    text-align: center;
+    margin: 0;
+    padding: 0.2rem;
+}
+
+.hide{
+    width: 200%;    
+}
+
+
+.table-div{
+    display: flex;
+    justify-content: center;
+}
+.table-div table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px;
+    width: 80%;
+    height: 170px;
+}
+
+
+
+
+
 footer{
-    margin-top: 50vh;
+    margin-top: 10vh;
 }
