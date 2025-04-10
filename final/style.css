@@ -7,6 +7,10 @@ body{
     font-family: Georgia, serif;
 }
 
+body a{
+    color: rgb(127, 18, 244);
+}
+
 header,nav{
     background-color: rgba(0, 0, 0, 0.5);
     
@@ -76,11 +80,13 @@ ul li a{
     border-radius: 5px;
     transition: all 0.5s;
 }
+.card h4{
+    text-align: center;
+}
 
 .card:hover{
     transition: all 1s;
     opacity: 1;
-    cursor: pointer;
     
 }
 
@@ -131,15 +137,52 @@ ul li a{
     height: 170px;
 }
 
-
+/* FORM */
+.form-div{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    font-size: larger;
+    border-radius: 0.3em;
+    background-color: rgba(0, 234, 255,0.7);
+    box-shadow: 4px 2px 8px rgb(15, 15, 15); 
+}
+.form-row{
+    margin: 1em auto;
+    border-bottom: dotted pink 0.1px;
+}
+.form-row label{
+    display: inline-block;
+    width: 15rem;
+}
+.submit-div{
+    margin-bottom: unset;
+    border: unset;
+    display: flex;
+    justify-content: center;
+}
+.submit-div input{
+    background-color: rgba(144, 238, 144, 0.5);
+    width: 10rem;
+    height: 2rem;
+    box-shadow: 4px 2px 2px;
+    border-radius: 1em;
+}
+.submit-div input:hover{
+    background-color: rgba(144, 238, 144, 1);
+    cursor: pointer;
+}
+/*  */
 
 
 
 footer{
     margin-top: 10vh;
 }
-
-
 
 @media only screen AND (max-width: 850px){
     .card img{
