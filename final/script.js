@@ -11,11 +11,13 @@ form.addEventListener("submit", function(e){
     const lName = document.getElementById("lName");
     const email = document.getElementById("email");
     const where = document.getElementById("where");
+    const text = document.getElementById("text");
     const values = {
         fName:fName.value,
         lName:lName.value,
         email:email.value,
         where:where.value,
+        text:text.value,
     }
 
     const xhr = new XMLHttpRequest();
@@ -24,7 +26,7 @@ form.addEventListener("submit", function(e){
     xhr.onreadystatechange = function(){
         if(xhr.readyState === 4 && xhr.status === 200){
             const response = JSON.parse(xhr.responseText);
-            alert('Form submitted successfully');
+            console.log('Form submitted successfully')
             document.getElementById("message").innerHTML = response.message;
             document.getElementById("form").innerHTML = "";
         }else if (xhr.readyState === 4){
